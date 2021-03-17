@@ -1,0 +1,68 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Lucida Sans', Arial, sans-serif;
+	line-height: 0px;
+	color: gold;
+	background-color: black;
+}
+h1 {
+	color: gold;
+}
+.grid-container {
+	columns: 16 100px;
+	column-gap: 0.125rem;
+	width: 100%;
+	margin: 0 0;
+}
+.grid-container div {
+	width: 100px;
+	min-height: 100px;
+	margin: 0 0.25rem 0.25rem 0;
+	display: inline-block;
+	border: solid 1px black;
+	padding: 3px;
+	box-shadow: 3px 3px 3px gray;
+	border-radius: 3px;
+	transition: all .25s, visibility .25s ease-in-out;
+	background-color: white;
+}
+.grid-container div:after {
+	z-index: -1;
+}
+.grid-container div:hover {
+	background-color: black;
+	box-shadow: 1px 1px 5px yellow;
+	border-color: gold;
+	transform: scale(2.5);
+	display: inline-block;
+	position: relative;
+    z-index: 1
+}
+.grid-container div img {
+	width: 100%;
+	filter: grayscale(50%);
+	border-radius: 4px;
+	transition: all .25s ease-in-out;
+}
+.grid-container div:hover img {
+	filter: grayscale(0);
+	cursor: pointer;
+}
+.grid-container div p {
+	display: none;
+	color: #adb7bd;
+	
+	font-style: bold;
+	font-size: 8px;
+	text-align: center;
+	line-height: 8px;
+	text-indent: 0px;
+	margin: 0;
+	padding: 0;
+}
+.grid-container div:hover  p{
+	display: inline-block;
+}
