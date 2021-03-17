@@ -12,14 +12,13 @@ h1 {
 	color: gold;
 }
 .grid-container {
-	columns: 16 100px;
+	columns: 12 100px;
 	column-gap: 0.125rem;
 	width: 100%;
 	margin: 0 0;
 }
 .grid-container div {
 	width: 100px;
-	min-height: 100px;
 	margin: 0 0.25rem 0.25rem 0;
 	display: inline-block;
 	border: solid 1px black;
