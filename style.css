@@ -27,12 +27,9 @@ h1 {
 	border-radius: 3px;
 	transition: all .25s, visibility .25s ease-in-out;
 	background-color: white;
-	min-height: 100px;
 }
 .grid-container div:after {
 	z-index: -1;
-	min-height: 0;
-	height: auto;
 }
 .grid-container div:hover {
 	background-color: black;
