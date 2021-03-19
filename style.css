@@ -65,3 +65,25 @@ h1 {
 .grid-container div:hover p{
 	display: inline-block;
 }
+
+
+/* Sticky Header */
+.top_container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.static_header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+  z-index: 10;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .grid-container {
+  padding-top: 102px;
+}
