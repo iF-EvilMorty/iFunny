@@ -78,6 +78,7 @@ h1 {
 	background: #333;
 	padding: 10px 0;
 	color: #fff;
+	z-index: 100;
 }
 .fixed_header{
 	top: 0;
