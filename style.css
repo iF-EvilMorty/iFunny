@@ -19,6 +19,7 @@ h1 {
 }
 .grid-container div {
 	width: 250px;
+	min-height: 100px;
 	margin: 0 1rem 1rem 0;
 	display: inline-block;
 	border: solid 1px black;
