@@ -17,18 +17,19 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 56px;
-  opacity: 0.8;
+  opacity: 0.7;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   text-align: center;
-  transition: opacity 0.3s, transform 0.3s ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out 0s;
   z-index: 7;
 }
 .header:hover {
   opacity: 1;
-  box-shadow: 4px 4px 4px hsla(0, 0%, 100%, 0.07);
+  height: 55px;
+  transform: scale(1.05);
 }
 .header_leftbar {
   flex-basis: 240px;
@@ -78,9 +79,9 @@ body {
   display: inline-block;
   border: solid 1px #000;
   padding: 4px;
-  box-shadow: 4px 4px 4px hsla(0, 0%, 100%, 0.07);
+  //box-shadow: 4px 4px 4px hsla(0, 0%, 100%, 0.07);
   border-radius: 4px;
-  transition: all 0.25s, visibility 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out 0.2s;
   background-color: #fff;
 }
 .grid_container div:after {
@@ -88,18 +89,18 @@ body {
 }
 .grid_container div:hover {
   background-color: #000;
-  box-shadow: 2px 2px 4px #fc0;
-  border-color: #fc0;
+  //box-shadow: 2px 2px 4px #fc0;
+  //border-color: #fc0;
   transform: scale(1.75);
   display: inline-block;
   position: relative;
-  z-index: 1;
+  z-index: 6;
 }
 .grid_container div img {
   width: 100%;
   filter: grayscale(50%);
   border-radius: 4px;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .grid_container div:hover img {
   filter: grayscale(0);
@@ -141,4 +142,55 @@ body {
 .logo_text .logo_text {
   height: auto;
   width: auto;
+}
+hr {
+  width: 85%;
+  height: 0.25rem;
+  float: left;
+  color: black;
+  padding-top: 3px;
+
+  background-color: none;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent);
+  border: none;
+  border-top: 3px dotted hsla(0, 0%, 100%, 0.07);
+  border-bottom: 3px dotted hsla(0, 0%, 100%, 0.07);
+  box-shadow: 100px 4px 4px hsla(0, 0%, 100%, 0.07);
+  box-shadow: -100px 4px 4px hsla(0, 0%, 100%, 0.07);
+}
+
+/*==================================================
+ * boxshadow
+ * ===============================================*/
+.boxshadow {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.boxshadow:before,
+.boxshadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+.boxshadow:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
 }
