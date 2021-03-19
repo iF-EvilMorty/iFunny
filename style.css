@@ -33,11 +33,11 @@ h1 {
 }
 .grid-container div:hover {
 	background-color: black;
-	box-shadow: 4px 4px 4px yellow;
+	box-shadow: 2px 2px 4px yellow;
 	border-color: gold;
 	transform: scale(2);
-	display: inline-block;
-	position: relative;
+	/*display: inline-block;
+	position: relative;*/
 	margin: 0 1rem -2rem 0;
 	z-index: 1;
 }
