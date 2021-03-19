@@ -53,7 +53,7 @@ h1 {
 }
 .grid-container div p {
 	display: none;
-	color: #adb7bd;
+	color: hsla(0,0%,100%,.6);
 	font-style: bold;
 	font-size: 12px;
 	text-align: center;
