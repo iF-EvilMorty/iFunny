@@ -1,7 +1,7 @@
 
-//-Scrolling Header Bar-//
+// Scrolling Header Bar //
 window.onscroll = function() {myFunction()};
-var header = document.getElementById("myHeader");
+var header = document.getElementById("static_header");
 var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
@@ -10,5 +10,5 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-//-END-Scrolling Header-Bar-//
+//--END-Scrolling Header-Bar--//
 
