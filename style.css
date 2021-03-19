@@ -12,9 +12,9 @@ h1 {
 	color: gold;
 }
 .grid-container {
-	columns: 6 100px;
+	columns: 6 250px;
 	column-gap: 0.25rem;
-	width: 90%;
+	width: 85%;
 	margin: 0 0;
 }
 .grid-container div {
@@ -54,7 +54,7 @@ h1 {
 	display: none;
 	color: #adb7bd;
 	font-style: bold;
-	font-size: 8px;
+	font-size: 12px;
 	text-align: center;
 	line-height: 8px;
 	text-indent: 0px;
