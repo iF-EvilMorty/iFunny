@@ -59,7 +59,7 @@ h1 {
 	line-height: 8px;
 	text-indent: 0px;
 	margin: 0;
-	padding: 0;
+	padding: 4px 0 0 0;
 }
 .grid-container div:hover  p{
 	display: inline-block;
