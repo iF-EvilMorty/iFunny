@@ -69,22 +69,36 @@ h1 {
 
 
 /* Sticky Header */
+
+.fixed_header, .fixed_footer{
+	width: 100%;
+	position: fixed;        
+	background: #333;
+	padding: 10px 0;
+	color: #fff;
+}
+.fixed_header{
+	top: 0;
+}
+.fixed_footer{
+	bottom: 0;
+} 
 .top_container {
-  background-color: #080d11;
-  padding: 30px;
-  text-align: center;
+	background-color: #080d11;
+	padding: 30px;
+	text-align: center;
 }
 .static_header {
-  padding: 10px 16px;
-  background: #000;
-  color: #fff;
-  z-index: 10;
+	padding: 10px 16px;
+	background: #000;
+	color: #fff;
+	z-index: 10;
 }
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 .sticky + .grid-container {
-  padding-top: 102px;
+	padding-top: 102px;
 }
