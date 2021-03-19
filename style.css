@@ -18,7 +18,7 @@ h1 {
 	margin: 0 0;
 }
 .grid-container div {
-	width: 320px;
+	width: 220px;
 	margin: 0 0.25rem 0.25rem 0;
 	display: inline-block;
 	border: solid 1px black;
