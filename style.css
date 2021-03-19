@@ -4,7 +4,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Lucida Sans', Arial, sans-serif;
-	line-height: 0px;
+	line-height: 0.25rem;;
 	color: gold;
 	background-color: black;
 }
@@ -13,7 +13,7 @@ h1 {
 }
 .grid-container {
 	columns: 6 100px;
-	column-gap: 0.125rem;
+	column-gap: 0.25rem;
 	width: 90%;
 	margin: 0 0;
 }
@@ -35,7 +35,7 @@ h1 {
 	background-color: black;
 	box-shadow: 1px 1px 5px yellow;
 	border-color: gold;
-	transform: scale(2.5);
+	transform: scale(1.5);
 	display: inline-block;
 	position: relative;
     z-index: 1
