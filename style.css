@@ -3,7 +3,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Lucida Sans', Arial, sans-serif;
+	font-family: proximanova,arial,tahoma,sans-serif
 	line-height: 0.25rem;;
 	color: gold;
 	background-color: black;
