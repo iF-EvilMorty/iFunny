@@ -6,7 +6,7 @@ body {
 	font-family: 'Lucida Sans', Arial, sans-serif;
 	line-height: 0.25rem;
 	color: gold;
-	background-color: black;
+	background-color: #171a1e;
 }
 h1 {
 	color: gold;
@@ -75,7 +75,7 @@ h1 {
 }
 .static_header {
   padding: 10px 16px;
-  background: #555;
+  background: #080d11;;
   color: #f1f1f1;
   z-index: 10;
 }
