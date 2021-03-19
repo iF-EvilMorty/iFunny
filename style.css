@@ -38,8 +38,8 @@ h1 {
 	transform: scale(2);
 	display: inline-block;
 	position: relative;
-	z-index: 1;
 	margin: 0 1rem -2rem 0;
+	z-index: 1;
 }
 .grid-container div img {
 	width: 100%;
