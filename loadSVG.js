@@ -5,4 +5,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }
 document.getElementById("TheBody").innerHTML = SVG_logo_icon;});
 document.getElementById("TheBody").innerHTML = SVG_logo_text;});
-document.getElementByClass("featured_icon").innerHTML = SVG_featured_icon;});
+document.getElementByClassName("featured_icon").innerHTML = SVG_featured_icon;});
