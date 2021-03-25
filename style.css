@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "ProximaNovaCond";
+  src: url("webfont.eot");
+  src: url("webfont.eot?#iefix") format("embedded-opentype"),
+    url("https://raw.githack.com/iF-EvilMorty/iFunny/main/WebFonts/Proxima-Nova-Cond-Black.woff2")
+      format("woff2"),
+    url("https://raw.githack.com/iF-EvilMorty/iFunny/main/WebFonts/Proxima-Nova-Cond-Black.woff")
+      format("woff"),
+    url("https://raw.githack.com/iF-EvilMorty/iFunny/main/WebFonts/Proxima-Nova-Cond-Black.ttf")
+      format("truetype"),
+    url("https://raw.githack.com/iF-EvilMorty/iFunny/main/WebFonts/Proxima-Nova-Cond-Black.svg#svgFontName")
+      format("svg");
+}
+
 body {
   display: flex;
   margin: 0;
@@ -7,26 +21,27 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Lucida Sans", Arial, sans-serif;
-  line-height: 12px;
+  font-family: "ProximaNovaCond", Ariel, sans-serif;
+  line-height: 1em;
   text-align: center;
   color: hsla(0, 0%, 100%, 0.6);
   background-color: #171a1e;
 }
 .top_banner {
   width: 100%;
-  height: 150px;
+  height: 70px;
   box-sizing: border-box;
   margin: 0 auto;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent);
 }
 .header {
-  display: flex;
+  display: inline-flex;
   background: #000;
+  line-height: 0.125em;
   -ms-flex-align: center;
   align-items: center;
   height: 70px;
-  opacity: 0.9;
+  opacity: 1;
   position: fixed;
   top: 0;
   right: 0;
@@ -37,29 +52,35 @@ body {
 .header:hover {
   opacity: 1;
   height: 70px;
-  transform: scale(1.0125);
+  transform: scale(1.0125, 1);
 }
 .header_container {
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  margin-right: 60px;
   box-sizing: border-box;
-  margin: 0 auto;
 }
-.header_left {
+.LogoText_container {
   min-width: 80px;
-  max-width: 240px;
+  max-width: 160px;
+  margin-left: 1.5rem;
+}
+.profile_nick {
+  color: #fc0;
+  background: none;
+  margin-top: 6px;
+  font-size: 28px;
+  text-align: left;
+  text-shadow: inset 2px 1px 0px #000, 2px 1px 2px #ccc, -2px -1px 0px #000,
+    -2px -1px 2px #333;
 }
 .header_right {
-  width: 25%;
-  flex: 0 0 300px;
-  text-align: left;
-  margin-right: 1rem;
+  min-width: 80px;
+  max-width: 400px;
+  text-align: center;
+  margin-right: -1rem;
 }
 .grid_container {
   columns: 6 250px;
   column-gap: 1rem;
-  width: 85%;
+  width: 90%;
   margin: 1.5rem;
 }
 .grid_container div {
@@ -71,14 +92,17 @@ body {
   display: inline-block;
   padding: 8px;
   border-radius: 4px;
-  transition: transform 0.2s ease-in-out 0.2s, box-shadow 0.2s, border 0.2s;
-  box-shadow: 15px 15px 10px -5px rgba(8, 13, 17, 1);
+  transition: transform 0.25s ease-in-out 0.25s, box-shadow 0.4s ease 0.25s,
+    border 0.5s;
+  box-shadow: 10px 10px 15px 5px #080d11, 0px 0px 20px 5px #080d11,
+    inset 4px 4px 5px 0px #080d11, inset -4px -4px 5px -4px #f7f2ee;
 }
 .grid_container div:hover {
-  z-index: 8;  
-  transform: scale(1.75);
-  border-color: rgb(255, 204, 0);
-  box-shadow: 0px 0px 20px 10px rgba(8, 13, 17, 1), inset 0px 0px 5px rgba(255, 204, 0, 0.5);
+  z-index: 8;
+  transform: scale(1.65);
+  border: 2px outset #fc0;
+  box-shadow: 0px 0px 20px 10px #080d11, 0px 0px 10px 5px #080d11,
+    inset 0px 0px 5px 0px #fc0;
 }
 .grid_container div:after {
   z-index: -1;
@@ -95,27 +119,25 @@ body {
   border-radius: 0;
 }
 .grid_container .post_mp4 {
-  border: solid 2px rgba(189, 8, 28, 0.85);
+  border: inset 2px rgba(189, 8, 28, 0.85);
 }
 .grid_container .post_gif {
-  border: solid 3px rgba(51, 136, 255, 0.85);
+  border: inset 2px rgba(51, 136, 255, 0.85);
 }
 .grid_container .post_jpg {
-  border: solid 2px rgba(255, 255, 255, 0.85);
+  border: inset 2px rgba(255, 255, 255, 0.85);
 }
 .grid_container .post_featured,
 .grid_container .post_featured:hover {
-  box-shadow: #FFF 0 -1px 4px, #ffff00 0 -2px 10px, 
-    #ffcc00 0 -10px 20px, 
-    red 0 -18px 40px, 
-    0px 0px 20px 5px rgba(0,0,0,0);
+  box-shadow: #fff 0 -1px 4px, #ffff00 0 -2px 10px, #fc0 0 -10px 20px,
+    red 0 -18px 40px;
 }
 .grid_container div p {
   display: hidden;
   font-style: bold;
   font-size: 12px;
   text-align: center;
-  line-height: 12px;
+  line-height: 1em;
   margin: 0;
   padding: 0;
 }
