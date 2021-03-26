@@ -1,4 +1,9 @@
-<svg fill="" class="Icon Icon_Star_Featured" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1"
+    baseProfile="full"
+    width="20" height="600"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    fill="" class="Icon Icon_Star_Featured">
   <use xlink:href="#icon_star-featured">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="icon_star-featured">
       <g fill="none" fill-rule="evenodd">
